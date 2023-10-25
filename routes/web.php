@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // 13. Change the route in inertia('App') to get App.vue
+    return inertia('Home');
 });

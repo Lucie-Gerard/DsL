@@ -36,6 +36,9 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            // 3. This middleware provides a version() method for setting your asset version, as well as a share() 
+            //    method for defining shared data.
+            \App\Http\Middleware\HandleInertiaRequests::class,
         ],
 
         'api' => [

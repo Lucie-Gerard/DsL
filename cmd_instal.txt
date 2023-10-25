@@ -1,0 +1,56 @@
+2.
+php artisan inertia:middleware
+
+
+4.
+npm install @inertiajs/vue3
+If needed : npm i @jridgewell/sourcemap-codec
+
+
+7.
+npm install vue@next
+If needed : npm i @jridgewell/sourcemap-codec
+
+
+8.
+Create >resources>js>Pages the file App.vue (named Home in this project)
+
+
+9. 
+npm install @vitejs/plugin-vue
+
+
+11.
+npm install
+
+
+14.
+npm install pinia
+
+
+16. 
+Create >resources>js>components>User.vue
+Create >resources>js>stores>UserStore.ts
+
+
+17.
+Create folder Shared in >resources>js
+
+
+18a.
+Create a file Nav.vue in >resources>js>Shared
+=> File that can be imported in other files so we write only one nav
+
+
+19.
+Create the files according to the nav in >resources>js>Pages
+
+
+20. 
+Create Layout.vue in >resources>js>Shared
+=> Get what you need for several pages in one
+
+
+23.
+Make the Layout persistant in app.js
+(no need to call it in every page that needs the Layout)
