@@ -3,6 +3,7 @@ import './bootstrap';
 // 5. Update your main JavaScript file to boot your Inertia app.
 
 import { createApp, h } from 'vue';
+// 26. Component Link
 import { createInertiaApp, Link, Head } from '@inertiajs/vue3';
 // 15a. Pinia
 import { createPinia } from 'pinia';
@@ -22,6 +23,7 @@ createInertiaApp({
         let page = pages[`./Pages/${name}.vue`]
         // 23c. It will automatically set the page layout to Layout if 
         //      a layout has not already been set for that page
+        //      (The Layout is the parent, not the child anymore)
         page.default.layout = page.default.layout || Layout
         // 23d. Return page
         return page
@@ -31,6 +33,9 @@ createInertiaApp({
             .use(plugin)
             // 15c. Pinia
             .use(pinia)
+            // 26. Component Link
+            .component("Link", Link)
+            .component("Head", Head)
             // 15d. Pinia
             .mount('#app')
     },

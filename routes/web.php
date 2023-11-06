@@ -17,3 +17,15 @@ Route::get('/', function () {
     // 13. Change the route in inertia('App') to get App.vue
     return inertia('Home');
 });
+
+
+Route::get('/donation', function () {
+    
+    return inertia('Donation');
+});
+
+
+Route::get('/account', function () {
+    
+    return inertia('Account');
+});

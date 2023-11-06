@@ -10,5 +10,5 @@
 
         23e. The Layout appears here without calling it : persistant Layout in app.js
      -->
-
+     <h2>My decks</h2>
 </template>

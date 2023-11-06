@@ -7,13 +7,14 @@ import Nav from "./Nav.vue";
     <!-- 22. Build the header and integrate the nav -->
     <header class="main-header">
         <h1 class="header_logo text-center">
-            <a href="index.html"><img src="./assets/img/nav/logo.png" alt="Logo"></a>
+            <Link href="/"><img src="./assets/img/nav/logo.png" alt="Logo"></Link>
         </h1>
 
         <Nav />
     </header>
 
     <main>
-        <h2>My decks</h2>
+        <!-- 24. The slot will display the content of other pages (like Home, etc) -->
+       <slot />
     </main>
 </template>
