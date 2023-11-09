@@ -3,7 +3,8 @@ import './bootstrap';
 // 5. Update your main JavaScript file to boot your Inertia app.
 
 import { createApp, h } from 'vue';
-// 26. Component Link
+// 27a. Component Link
+// 28a. Component Head
 import { createInertiaApp, Link, Head } from '@inertiajs/vue3';
 // 15a. Pinia
 import { createPinia } from 'pinia';
@@ -14,8 +15,8 @@ import Layout from './Shared/Layout.vue';
 const pinia = createPinia();
 
 createInertiaApp({
-    // 12a. id:'app' passes to Inertia (@inertia) the initial page data (app.blade.php here)
-    id: 'app',
+    // 12a. Works without id app because of @inertia
+    // id: 'app',
     resolve: name => {
         // 6. Create a folder Pages in >resources>js
         const pages = import.meta.glob('./Pages/**/*.vue', { eager: true })
@@ -33,10 +34,15 @@ createInertiaApp({
             .use(plugin)
             // 15c. Pinia
             .use(pinia)
-            // 26. Component Link
+            // 27b. Component Link
             .component("Link", Link)
+            // 28b. Component Head
             .component("Head", Head)
             // 15d. Pinia
             .mount('#app')
     },
-})
+
+    // 32. "DsL" + the title variable will appear for each Head component 
+    title: title => `DsL - ${title}`
+        
+});

@@ -64,5 +64,28 @@ Use a Link component => Inertia will send an AJAX request
 Make the active link active and 
 
 
-27. Don't forget to get the Link component as a global component (app.js)
- 
+27. 
+Don't forget to get the Link component as a global component (app.js)
+
+
+28. 
+Make a Head component to display it on every page without calling it
+
+
+29. 
+Use the title in the Head component in the Layout as a fallback if you forget the 
+title on a specific page
+
+
+30.
+Write the specific title in each page
+Only works with this way of writing the Head component : <Head title=""></Head> 
+
+
+31. 
+Use head key to avoid duplicated meta description and to avoid the Layout to override
+the Head component of other pages
+
+
+32. You can call the title in app.js and add an element (DsL -) that will show in all 
+title in addition of the title written in each Head component of each page 

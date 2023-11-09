@@ -9,7 +9,7 @@
     @inertiaHead
 </head>
 
-<body>
+<body class="container regular">
     {{-- 1. It's where pages data will be passed --}}
     @inertia
 </body>
