@@ -1,37 +1,39 @@
 <script setup>
-// 28. Import the NavLink page to make the Link component work (it wraps NavLink)
-import NavLink from './NavLink.vue';
 
 </script>
 
 <template>
     <!-- 18b. the Nav -->
     <nav class="text-center header_nav sticky">
+        <h1 class="header_logo text-center">
+            <Link href="/"><img src="./assets/img/nav/logo.png" alt="Logo"></Link>
+        </h1>
+        
         <ul class="nav_links">
-            <!-- 29. Replace the anchor tag with NavLink -->
-            <!-- 30. Is active if the page component is that page -->
+            <!-- 25. Replace a tag with Link -->
+            <!-- 26. :class is a conditional class. Get the class "active" if that page url -->
             <li>
-                <NavLink href="/shared" :active="$page.component === 'Shared'">
+                <Link href="/shared" :class="{'active' : $page.url.startsWith('/shared')}">
                     Shared decks
-                </NavLink>
+                </Link>
             </li>
 
             <li>
-                <NavLink href="/account" :active="$page.component === 'Account'">
+                <Link href="/account" :class="{'active' : $page.url.startsWith('/account')}">
                     Account
-                </NavLink>
+                </Link>
             </li>
 
             <li>
-                <NavLink href="/donation" :active="$page.component === 'Donation'">
+                <Link href="/donation" :class="{'active' : $page.url.startsWith('/donation')}">
                     Donation
-                </NavLink>
+                </Link>
             </li>
 
             <li>
-                <NavLink href="/logout">
+                <Link href="/logout">
                     <img src="./assets/img/nav/disconnect.png" alt="disconnect" id="disconnect-btn">
-                </NavLink>
+                </Link>
             </li>
 
             <ul class="dropdown_menu">

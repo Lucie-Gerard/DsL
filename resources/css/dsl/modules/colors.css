@@ -1,0 +1,48 @@
+/* VARIABLES */
+:root {
+    --main-bg-color: #99D34E;
+    --second-bg-color: #FAFFFA;
+    --fc-color: #FBFCF9;
+    --text-color: #000A0C;
+    --primary-color: #01289A;
+    --secondary-color: var(--main-bg-color);
+    --stroke-color: rgba(1,40,154, 0.3);
+}
+
+
+/* CONNEXION PAGE */
+body {
+    background-color: var(--main-bg-color);
+}
+
+
+/* REGULAR */
+.regular main {
+    background-color: var(--second-bg-color);
+}
+
+
+/* FORM */
+label, input, p, li, a {
+    color: var(--text-color);
+}
+
+#btn_login, #btn_signup{
+    color: var(--primary-color);
+    background-color: var(--fc-color);
+}
+
+#btn_create-account{
+    color: var(--fc-color);
+    background-color: var(--secondary-color);
+}
+
+input#username, input#password, input#email,
+.main_search input,  .main_name-deck {
+    border: 1px solid var(--stroke-color);
+    -webkit-box-shadow: 0 0 0 30px var(--fc-color) inset !important;
+}
+
+.existing-deck{
+    border: 1px solid var(--main-bg-color);
+}

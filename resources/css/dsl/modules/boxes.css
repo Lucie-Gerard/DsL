@@ -1,0 +1,76 @@
+/* CONTENT ALIGNMENT */
+.text-center {
+    text-align: center;
+}
+
+nav {
+    display: block;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+
+/* REGULAR */
+.regular .main_form-log div {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+/* FLEX NAV */
+@media screen and (min-width : 768px) {
+    .regular nav {
+        display: flex;
+    }
+
+    .regular nav ul {
+        display: flex;
+        margin-left: auto;
+        column-gap: 2rem;
+    }
+
+    /* DROPDOWN MENU FLEX */
+    .dropdown_menu{
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .dropdown_content:not(:first-child) {
+        display: none;
+    }
+}
+
+/* H2 AND BUTTON NEW DECK */
+.regular .main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.aligned{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+/* DECKS */
+section#decks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.existing-deck{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main_search {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}

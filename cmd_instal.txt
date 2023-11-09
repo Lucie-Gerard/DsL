@@ -57,10 +57,12 @@ Make the Layout persistant in app.js
 
 
 25.
-Make the active link active and 
 Use a Link component => Inertia will send an AJAX request
-a. Create the file NavLink.vue in Shared folder
 
 
-26. Don't forget to get the Link component as a global component (app.js)
+26.
+Make the active link active and 
+
+
+27. Don't forget to get the Link component as a global component (app.js)
  

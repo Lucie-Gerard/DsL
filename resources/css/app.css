@@ -1,0 +1,212 @@
+@import './dsl/index.css';
+
+body {
+    box-sizing: border-box;
+    width: 768px;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+
+/* VARIOUS ITEMS WITH THE SAME PROPERTIES */
+.btn-none {
+    background-color: transparent;
+    border: none;
+}
+
+.main_search input,
+.main_name-deck {
+    width: 300px;
+    height: 2rem;
+    padding: 0 .5rem;
+    border-radius: 2px;
+}
+
+
+/* CONNEXION PAGE */
+#connect-page nav {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+#user-pass-forgot {
+    text-decoration: none;
+    margin-bottom: 2rem;
+    font-size: .8rem;
+}
+
+
+/* FORM */
+.regular .main_form-log {
+    padding-top: 6rem;
+}
+
+.main_form-log label {
+    margin-bottom: 1rem;
+}
+
+#connect-page input {
+    margin: auto;
+    width: 300px;
+    height: 2rem;
+    margin-bottom: 2.5rem;
+    padding: 0 .5rem;
+    border-radius: 2px;
+}
+
+.main_form-log div input {
+    width: 300px;
+    height: 2rem;
+    margin-bottom: 2.5rem;
+    padding: 0 .5rem;
+    border-radius: 2px;
+}
+
+.main_form-log div {
+    margin: auto;
+    margin-bottom: 2.5rem;
+}
+
+#btn_login,
+#btn_signup {
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(1, 40, 154, 0.5);
+}
+
+#btn_create-account {
+    margin: auto;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(1, 40, 154, 0.5);
+}
+
+
+
+/* POPUP CONNEXION PAGE */
+#popup-register {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: var(--second-bg-color);
+    width: 350px;
+    height: 250px;
+    box-shadow: 5px 5px 25px black;
+    display: none;
+}
+
+#popup-register button {
+    float: right;
+    margin: 1rem 1rem 0 0;
+}
+
+#popup-register button img {
+    width: 32px;
+    height: 32px;
+}
+
+#popup-register p {
+    margin: auto;
+    margin-top: 30%;
+    max-width: 300px;
+}
+
+
+/* REGULAR */
+.regular main {
+    height: 100vh;
+}
+
+.regular nav {
+    margin-top: 1rem;
+}
+
+.regular nav h1 {
+    margin: 0;
+}
+
+.regular nav h1 img {
+    height: 48px;
+}
+
+h2 {
+    margin: 0;
+}
+
+#btn-newdeck {
+    margin-left: auto
+}
+
+
+/* NAV HOME */
+.nav_links a {
+    text-decoration: none;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.nav_links {
+    padding: 0;
+}
+
+#disconnect-btn {
+    height: 20px;
+}
+
+.language-icon {
+    height: 20px;
+}
+
+.dropdown_menu {
+    padding: 0;
+}
+
+
+/* NO DECK */
+#nodeck {
+    display: none;
+}
+
+#nodeck_text {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.img-newdeck {
+    height: 32px;
+}
+
+
+/* SEARCH FIELD */
+.main_search {
+    margin: 0 0 3rem 2rem;
+}
+
+.search-icon {
+    height: 24px;
+}
+
+
+.deck-icon {
+    height: 24px;
+}
+
+/* DECKS */
+.existing-deck {
+    width: 125px;
+    height: 200px;
+    padding-bottom: 1rem;
+}
+
+
+/* LIST CARDS */
+
+.main_name-deck {
+    margin: 2rem 0 1rem 2rem;
+    color: rgba(0,10,12, .5);
+}

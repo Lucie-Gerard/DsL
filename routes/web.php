@@ -29,3 +29,9 @@ Route::get('/account', function () {
     
     return inertia('Account');
 });
+
+
+Route::get('/shared', function () {
+    
+    return inertia('Public');
+});
