@@ -32,13 +32,13 @@ label, input, p, li, a {
     background-color: var(--fc-color);
 }
 
-#btn_create-account{
+#btn_create-account, #btn_modify-account {
     color: var(--fc-color);
     background-color: var(--secondary-color);
 }
 
-input#username, input#password, input#email,
-.main_search input,  .main_name-deck {
+input#username, input#password, input#email, input#old_password, input#new_password,
+#search-name-deck,  #main_name-deck {
     border: 1px solid var(--stroke-color);
     -webkit-box-shadow: 0 0 0 30px var(--fc-color) inset !important;
 }

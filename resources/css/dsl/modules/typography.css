@@ -2,14 +2,12 @@
 
 @font-face {
     font-family: "Tillana";
-    src: url(../../../assets/fonts/Tillana/Tillana-Regular.ttf) format('truetype');
+    src: url(../../../../public/assets/fonts/Tillana/Tillana-Regular.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: "Reem";
-    src: url(../../../assets/fonts/reem-kufi-fun/webfonts/reem-kufi-fun-latin-ext-400-normal.woff) format('woff'),
-         url(../../../assets/fonts/reem-kufi-fun/webfonts/reem-kufi-fun-latin-ext-400-normal.woff2) format('woff2'),
-         url(../../../assets/fonts/reem-kufi-fun/ttf/reem-kufi-fun-latin-400-normal.ttf) format('truetype');
+    font-family: "Raleway";
+    src: url(../../../../public/assets/fonts/raleway/static/Raleway-Regular.ttf) format('truetype');
 }
 
 
@@ -19,12 +17,21 @@ h1, h2, h3 {
 }
 
 label, input, p, li, a {
-    font-family: "Reem", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Raleway", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.main_form-log #btn_login, .main_form-log #btn_signup, 
-.main_form-log label, .main_form-log input, 
-.main_form-log button {
+.main_form-log #btn_login,
+.main_form-log #btn_signup, 
+.main_form-log label,
+.main_form-log button,
+ 
+.main_form-account label, 
+.main_form-account button 
+{
     font-size: 1rem;
     font-weight: 600;
+}
+
+p {
+    line-height: 1.5rem;
 }

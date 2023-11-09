@@ -3,9 +3,9 @@
     text-align: center;
 }
 
-nav {
+/* nav {
     display: block;
-}
+} */
 
 main form {
     display: flex;
@@ -15,7 +15,7 @@ main form {
 
 
 /* REGULAR */
-.regular .main_form-log div {
+.regular .main_form-log div, .main_form-account div {
     display: flex;
     flex-direction: column;
     align-content: space-between;
