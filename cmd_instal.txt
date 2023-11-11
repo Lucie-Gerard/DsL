@@ -87,5 +87,16 @@ Use head key to avoid duplicated meta description and to avoid the Layout to ove
 the Head component of other pages
 
 
-32. You can call the title in app.js and add an element (DsL -) that will show in all 
+32.
+You can call the title in app.js and add an element (DsL -) that will show in all 
 title in addition of the title written in each Head component of each page 
+
+
+33.
+Modifier fichier env.
+Create tables in >database>migrations => php artisan make:migration create_tableName_table
+
+
+
+34.
+Models
