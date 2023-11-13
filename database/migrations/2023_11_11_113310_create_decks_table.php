@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('decks', function (Blueprint $table) {
             $table->id();
-            $table->string('username');
+            $table->string('name');
             $table->foreignId('user_id');
             $table->foreignId('category_id');
             $table->timestamps();

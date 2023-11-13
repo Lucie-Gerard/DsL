@@ -17,6 +17,7 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
+        // 36. Check the name of the columns
         return [
             'username' => fake()->username(),
             'email' => fake()->unique()->safeEmail(),
